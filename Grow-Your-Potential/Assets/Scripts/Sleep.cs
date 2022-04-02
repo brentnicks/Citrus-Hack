@@ -11,6 +11,8 @@ public class Sleep : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             Debug.Log("sleep");
+            gm.removeAllEnemies();
+            gm.increaseDayNumber();
         }
     }
 }
