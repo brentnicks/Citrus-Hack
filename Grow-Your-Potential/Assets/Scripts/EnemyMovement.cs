@@ -8,11 +8,21 @@ public class EnemyMovement : MonoBehaviour
     public float targetDistance;
     private Rigidbody2D rb;
     private GameObject player;
-
+    private bool isLocked = false;
+    private Vector3 direction;
 
     void move(){
-        Vector3 posDiff = player.transform.position - gameObject.transform.position;
-        rb.velocity = posDiff.normalized * movementSpeed;
+        if (!isLocked){
+            Vector3 posDiff = player.transform.position - gameObject.transform.position;
+            rb.velocity = posDiff.normalized * movementSpeed;
+        }
+    }
+
+    public IEnumerator LockDirection(float time){
+        direction = rb.velocity;
+        isLocked = true;
+        yield return new WaitForSeconds(time);
+        isLocked = false;
     }
 
     // Start is called before the first frame update

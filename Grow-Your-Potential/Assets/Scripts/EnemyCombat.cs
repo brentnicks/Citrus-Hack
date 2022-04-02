@@ -6,14 +6,15 @@ public class EnemyCombat : MonoBehaviour
 {
     public int health;
     public float attackDelay;
-    protected bool canAttack = true;
 
+    protected bool canAttack = true;
     protected float attackTimer;
     protected GameObject player;
     protected EnemyMovement movement;
 
     void Start(){
         player = GameObject.FindGameObjectWithTag("Player");
+        movement = gameObject.GetComponent<EnemyMovement>();
     }
     
     public virtual void attack(){
@@ -37,7 +38,7 @@ public class EnemyCombat : MonoBehaviour
         Vector3 playerPos = player.transform.position;
         Vector3 currPos = gameObject.transform.position;
         Vector3 posDiff = playerPos - currPos;
-        if (Mathf.Abs(posDiff.magnitude) < movement.targetDistance){
+        if (Mathf.Abs(posDiff.magnitude) < movement.targetDistance && canAttack){
             attack();
         }
 
