@@ -16,9 +16,13 @@ public class EnemyMovement : MonoBehaviour
             Vector3 posDiff = player.transform.position - gameObject.transform.position;
             rb.velocity = posDiff.normalized * movementSpeed;
         }
+        else{
+            rb.velocity = direction.normalized * movementSpeed;
+        }
     }
 
     public IEnumerator LockDirection(float time){
+        Debug.Log("Locked direction is called");
         direction = rb.velocity;
         isLocked = true;
         yield return new WaitForSeconds(time);
@@ -30,6 +34,7 @@ public class EnemyMovement : MonoBehaviour
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
         player = GameObject.FindGameObjectWithTag("Player");
+        isLocked = false;
     }
 
     // Update is called once per frame
