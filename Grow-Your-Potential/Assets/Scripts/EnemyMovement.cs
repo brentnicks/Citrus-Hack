@@ -8,6 +8,13 @@ public class EnemyMovement : MonoBehaviour
     public float targetDistance;
     private Rigidbody2D rb;
     private GameObject player;
+
+
+    void move(){
+        Vector3 posDiff = player.transform.position - gameObject.transform.position;
+        rb.velocity = posDiff.normalized * movementSpeed;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,9 +28,8 @@ public class EnemyMovement : MonoBehaviour
         Vector3 playerPos = player.transform.position;
         Vector3 currPos = gameObject.transform.position;
         Vector3 posDiff = playerPos - currPos;
-        Debug.Log(posDiff.magnitude);
         if (Mathf.Abs(posDiff.magnitude) < targetDistance){
-            rb.velocity = posDiff.normalized * movementSpeed;
+            move();
         }
         else{
             rb.velocity = Vector2.zero;
