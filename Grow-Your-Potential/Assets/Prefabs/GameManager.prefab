@@ -49,3 +49,11 @@ MonoBehaviour:
   border1: {fileID: 0}
   border2: {fileID: 0}
   border3: {fileID: 0}
+  coinCounter: {fileID: 0}
+  coins: 5
+  seed1: 0
+  seed2: 0
+  seed3: 0
+  textSeed1: {fileID: 0}
+  textSeed2: {fileID: 0}
+  textSeed3: {fileID: 0}
