@@ -8,6 +8,7 @@ public class Slash : MonoBehaviour
     public float slashTime = 0.1f;
     public GameObject something; 
     public float knockback = 100f; 
+    public int damage; 
     private Rigidbody2D rb; 
     // Start is called before the first frame update
     void Start()
@@ -20,7 +21,7 @@ public class Slash : MonoBehaviour
     {
         if ( collision.gameObject.tag == "Enemy" )
         {
-            collision.gameObject.GetComponent<EnemyCombat>().takeDamage();
+            collision.gameObject.GetComponent<EnemyCombat>().takeDamage(damage);
             Vector3 direction = collision.transform.position - transform.position;
             direction.y = 0; 
             collision.gameObject.GetComponent<Rigidbody2D>().AddForce(direction.normalized * knockback, ForceMode2D.Impulse);

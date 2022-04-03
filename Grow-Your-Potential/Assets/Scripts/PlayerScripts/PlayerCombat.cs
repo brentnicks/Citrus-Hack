@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerCombat : MonoBehaviour
 {
     private GameObject enemy; 
-    public GameObject testObject; 
+    public GameObject sword; 
     public float slashTime = 0.5f; 
 
     public void takeDamage(){
@@ -40,7 +40,7 @@ public class PlayerCombat : MonoBehaviour
             Vector3 worldMousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             Vector2 direction = (Vector2)((worldMousePos - transform.position));
             direction.Normalize();
-            Instantiate(testObject, transform.position + (Vector3)(direction * 0.5f), Quaternion.identity);
+            Instantiate(sword, transform.position + (Vector3)(direction * 0.5f), Quaternion.identity);
         }
     }
 }

@@ -88,11 +88,13 @@ public class ShopItem : MonoBehaviour
                     break;
                 case "better":
                     //implement damage increase
+                    player.GetComponent<PlayerCombat>().sword = this.gameObject; 
                     Destroy(gameObject);
                     break;
 
                 case "best":
                     //implement better damage increase;
+                    player.GetComponent<PlayerCombat>().sword = this.gameObject; 
                     Destroy(gameObject);
                     break;
                 default:
