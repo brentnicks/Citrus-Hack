@@ -180,7 +180,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6113581356801129113, guid: 8721e8483f3eb424e85d409aac260f05, type: 3}
       propertyPath: coins
-      value: 50
+      value: 99999
       objectReference: {fileID: 0}
     - target: {fileID: 6113581356801129113, guid: 8721e8483f3eb424e85d409aac260f05, type: 3}
       propertyPath: border1
@@ -25038,6 +25038,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7646884316730376557, guid: 52a4bb293a7913a40abbafa1dbbf8e45, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7792970507477883184, guid: 52a4bb293a7913a40abbafa1dbbf8e45, type: 3}
       propertyPath: isActive
       value: 0
@@ -25051,6 +25055,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -6614790920733327266, guid: 333070cec2a999949a0eb1ebf7464fda, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 418429465806473023, guid: 333070cec2a999949a0eb1ebf7464fda, type: 3}
       propertyPath: isActive
       value: 0

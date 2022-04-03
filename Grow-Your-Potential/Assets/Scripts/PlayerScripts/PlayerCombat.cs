@@ -15,6 +15,7 @@ public class PlayerCombat : MonoBehaviour
     private float slashTimer;
 
     public void takeDamage(int damageTaken){
+        health -= damageTaken;
         healthBar.GetComponent<Text>().text = "Health: " + health;
     }
 
