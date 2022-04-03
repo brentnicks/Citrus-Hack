@@ -18,21 +18,23 @@ public class Sleep : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && canSleep && !hasSlept)
         {
-            gm.removeAllEnemies();
-            gm.hatchSeeds();
-            gm.increaseDayNumber();
-            weedSpawner.RemoveWeeds();
-            weedSpawner.spawnPlants();
             StartCoroutine(GoToSleep());
-            foreach (Planter plant in gm.planters)
-            {
-                plant.canPlant = true;
-            }
-            hasSlept = true;
         }
     }
 
-    private IEnumerator GoToSleep(){
+    public IEnumerator GoToSleep(){
+
+        gm.removeAllEnemies();
+        gm.hatchSeeds();
+        gm.increaseDayNumber();
+        weedSpawner.RemoveWeeds();
+        weedSpawner.spawnPlants();
+        foreach (Planter plant in gm.planters)
+        {
+            plant.canPlant = true;
+        }
+        hasSlept = true;
+
         PlayerMovement.isFrozen = true;
         Image sr = darkness.GetComponent<Image>();
         while (sr.color.a < 1){
@@ -41,7 +43,7 @@ public class Sleep : MonoBehaviour
             sr.color = newColor;
             yield return null;
         }
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1.5f);
         PlayerMovement.isFrozen = false;
         while (sr.color.a > 0){
             Color newColor = sr.color;

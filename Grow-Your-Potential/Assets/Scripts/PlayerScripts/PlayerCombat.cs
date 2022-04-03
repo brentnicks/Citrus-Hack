@@ -8,6 +8,7 @@ public class PlayerCombat : MonoBehaviour
     private GameObject enemy; 
     public GameObject sword; 
     public GameObject healthBar;
+    public Sleep Bed;
 
     public float health = 100;
     public float slashTime = 0.5f; 
@@ -17,6 +18,21 @@ public class PlayerCombat : MonoBehaviour
     public void takeDamage(int damageTaken){
         health -= damageTaken;
         healthBar.GetComponent<Text>().text = "Health: " + health;
+
+        if (health <= 0){
+            gameObject.transform.position = new Vector2(47, -13.5f);
+            GameObject camera = GameObject.FindGameObjectWithTag("MainCamera");
+            camera.transform.position = new Vector3(47, -13.5f, -10);
+            CameraFollow cf = camera.GetComponent<CameraFollow>();
+            cf.isFrozen = !cf.isFrozen;
+
+            Sleep.hasSlept = false;
+            StartCoroutine(Bed.GoToSleep());
+            gameObject.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
+            health = 100;
+            healthBar.GetComponent<Text>().text = "Health: " + health;
+
+        }
     }
 
     // Start is called before the first frame update
