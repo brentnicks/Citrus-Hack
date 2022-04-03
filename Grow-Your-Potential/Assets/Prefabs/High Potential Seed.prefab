@@ -96,8 +96,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2eaff9c436b46b9428c3b21393e79c91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cost: 10
-  item: high
+  cost: 150
+  item: better
   floatingTextPrefab: {fileID: 4689767091672851696, guid: 4ee3766c9bb318343945e2f8bf4a8535, type: 3}
 --- !u!61 &6292837780583778692
 BoxCollider2D:

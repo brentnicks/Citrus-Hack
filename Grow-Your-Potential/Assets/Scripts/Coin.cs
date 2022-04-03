@@ -12,6 +12,7 @@ public class Coin : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D coll){
         if (coll.gameObject.tag == "Player"){
             gm.coins += coinValue;
+            gm.updateCoins();
             Destroy(this.gameObject);
         }
     }

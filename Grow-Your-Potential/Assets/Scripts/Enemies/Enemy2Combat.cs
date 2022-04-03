@@ -30,7 +30,7 @@ public class Enemy2Combat : EnemyCombat
         movement.movementSpeed -= dashSpeed;
     }
 
-    private void shoot(){
+    protected virtual void shoot(){
         Projectile newProj = Instantiate(proj, gameObject.transform.position, Quaternion.identity);
         newProj.direction = player.transform.position - gameObject.transform.position;
         float rotation = Mathf.Atan2(direction.x, direction.y) * Mathf.Rad2Deg;
