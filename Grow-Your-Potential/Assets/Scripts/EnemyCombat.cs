@@ -6,6 +6,9 @@ public class EnemyCombat : MonoBehaviour
 {
     public int health;
     public float attackDelay;
+    public float recoilForce = 50f; 
+
+    public Rigidbody2D enemyRigidBody; 
 
     protected bool canAttack = true;
     protected float attackTimer = 0;
@@ -15,15 +18,23 @@ public class EnemyCombat : MonoBehaviour
     void Start(){
         player = GameObject.FindGameObjectWithTag("Player");
         movement = gameObject.GetComponent<EnemyMovement>();
+        enemyRigidBody = gameObject.GetComponent<Rigidbody2D>(); 
     }
     
     public virtual void attack(){
 
     }
     public void takeDamage(){
-        health--;
+        GameObject newObj = this.gameObject;
         if (health == 0){
             Destroy(this.gameObject);
+        }
+        else
+        {
+            health--;
+            Vector2 direction;
+            direction = (enemyRigidBody.transform.position - player.transform.position).normalized;
+            enemyRigidBody.velocity = direction * recoilForce;
         }
     }
 
