@@ -136,7 +136,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4212870462161964905, guid: 8721e8483f3eb424e85d409aac260f05, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4212870462161964905, guid: 8721e8483f3eb424e85d409aac260f05, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1281,11 +1281,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7f45203e08f20b43bb00f23e9635dc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canPlant: 1
   seed1: {fileID: 5958218757821814018, guid: dfa4dde29c50b1e4dbd15ea64d29d72f, type: 3}
   seed2: {fileID: 6839469430491881097, guid: 587b7c6ee575425489e5e2bb7f6b813c, type: 3}
   seed3: {fileID: 6839469430491881097, guid: 6bec7d9380dcc404a8433f6540bab5ce, type: 3}
-  enemy1: {fileID: 0}
-  enemy2: {fileID: 0}
+  enemy1: {fileID: 1250084737759428376, guid: 7eb3f372881af2a4bb94dd6480f02541, type: 3}
+  enemy2: {fileID: 1250084737759428376, guid: 00f7d23124c01a64083cc1c37d86ce7c, type: 3}
   enemy3: {fileID: 0}
 --- !u!61 &262855707
 BoxCollider2D:
@@ -5108,7 +5109,7 @@ Transform:
   - {fileID: 693091179}
   - {fileID: 262855705}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &556051273
 GameObject:
@@ -5328,11 +5329,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7f45203e08f20b43bb00f23e9635dc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canPlant: 1
   seed1: {fileID: 5958218757821814018, guid: dfa4dde29c50b1e4dbd15ea64d29d72f, type: 3}
   seed2: {fileID: 6839469430491881097, guid: 587b7c6ee575425489e5e2bb7f6b813c, type: 3}
   seed3: {fileID: 6839469430491881097, guid: 6bec7d9380dcc404a8433f6540bab5ce, type: 3}
-  enemy1: {fileID: 0}
-  enemy2: {fileID: 0}
+  enemy1: {fileID: 1250084737759428376, guid: 7eb3f372881af2a4bb94dd6480f02541, type: 3}
+  enemy2: {fileID: 1250084737759428376, guid: 00f7d23124c01a64083cc1c37d86ce7c, type: 3}
   enemy3: {fileID: 0}
 --- !u!61 &693091181
 BoxCollider2D:
@@ -10158,11 +10160,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7f45203e08f20b43bb00f23e9635dc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canPlant: 1
   seed1: {fileID: 5958218757821814018, guid: dfa4dde29c50b1e4dbd15ea64d29d72f, type: 3}
   seed2: {fileID: 6839469430491881097, guid: 587b7c6ee575425489e5e2bb7f6b813c, type: 3}
   seed3: {fileID: 6839469430491881097, guid: 6bec7d9380dcc404a8433f6540bab5ce, type: 3}
-  enemy1: {fileID: 0}
-  enemy2: {fileID: 0}
+  enemy1: {fileID: 1250084737759428376, guid: 7eb3f372881af2a4bb94dd6480f02541, type: 3}
+  enemy2: {fileID: 1250084737759428376, guid: 00f7d23124c01a64083cc1c37d86ce7c, type: 3}
   enemy3: {fileID: 0}
 --- !u!61 &717326861
 BoxCollider2D:
@@ -10239,11 +10242,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7f45203e08f20b43bb00f23e9635dc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canPlant: 1
   seed1: {fileID: 5958218757821814018, guid: dfa4dde29c50b1e4dbd15ea64d29d72f, type: 3}
   seed2: {fileID: 6839469430491881097, guid: 587b7c6ee575425489e5e2bb7f6b813c, type: 3}
   seed3: {fileID: 6839469430491881097, guid: 6bec7d9380dcc404a8433f6540bab5ce, type: 3}
-  enemy1: {fileID: 0}
-  enemy2: {fileID: 0}
+  enemy1: {fileID: 1250084737759428376, guid: 7eb3f372881af2a4bb94dd6480f02541, type: 3}
+  enemy2: {fileID: 1250084737759428376, guid: 00f7d23124c01a64083cc1c37d86ce7c, type: 3}
   enemy3: {fileID: 0}
 --- !u!61 &861883507
 BoxCollider2D:
@@ -23910,7 +23914,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98464fba7355bce499f921f5b9822842, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teleportLocation: {x: 47.5, y: -16, z: 0}
+  teleportLocation: {x: 47.5, y: -15.75, z: 0}
 --- !u!61 &1567219802
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24183,7 +24187,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1709789506 stripped
 MonoBehaviour:
@@ -24240,11 +24244,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7f45203e08f20b43bb00f23e9635dc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canPlant: 1
   seed1: {fileID: 5958218757821814018, guid: dfa4dde29c50b1e4dbd15ea64d29d72f, type: 3}
   seed2: {fileID: 6839469430491881097, guid: 587b7c6ee575425489e5e2bb7f6b813c, type: 3}
   seed3: {fileID: 6839469430491881097, guid: 6bec7d9380dcc404a8433f6540bab5ce, type: 3}
-  enemy1: {fileID: 0}
-  enemy2: {fileID: 0}
+  enemy1: {fileID: 1250084737759428376, guid: 7eb3f372881af2a4bb94dd6480f02541, type: 3}
+  enemy2: {fileID: 1250084737759428376, guid: 00f7d23124c01a64083cc1c37d86ce7c, type: 3}
   enemy3: {fileID: 0}
 --- !u!61 &1803875594
 BoxCollider2D:
@@ -24622,7 +24627,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3042554960778904879, guid: de7eaa2a68e8fbf4089ba4bb8880f6af, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3042554960778904879, guid: de7eaa2a68e8fbf4089ba4bb8880f6af, type: 3}
       propertyPath: m_LocalPosition.x
@@ -24673,6 +24678,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6696981519607003104, guid: 05ecaaa138cafe74296184a3c8346922, type: 3}
+      propertyPath: cost
+      value: 150
+      objectReference: {fileID: 0}
     - target: {fileID: 6696981519607003107, guid: 05ecaaa138cafe74296184a3c8346922, type: 3}
       propertyPath: m_Name
       value: High Potential Seed

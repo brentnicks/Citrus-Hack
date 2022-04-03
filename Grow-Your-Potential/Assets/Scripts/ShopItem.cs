@@ -12,6 +12,7 @@ public class ShopItem : MonoBehaviour
     GameObject player;
     public GameObject floatingTextPrefab;
     GameObject floatingText;
+    bool canBuy = false;
 
     private void Start()
     {
@@ -19,9 +20,9 @@ public class ShopItem : MonoBehaviour
         player = GameObject.FindWithTag("Player");
     }
 
-    private void OnTriggerStay2D(Collider2D collision)
+    private void Update()
     {
-        if (Input.GetKey(KeyCode.E) && collision.gameObject == player)
+        if (canBuy && Input.GetKeyDown(KeyCode.E))
         {
             buyItem();
         }
@@ -31,6 +32,7 @@ public class ShopItem : MonoBehaviour
     {
         if (collision.gameObject == player)
         {
+            canBuy = true;
             floatingText = Instantiate(floatingTextPrefab, transform.position, Quaternion.identity);
             floatingText.transform.position = new Vector3(floatingText.transform.position.x, floatingText.transform.position.y + 2, 0);
             if (item == "low")
@@ -50,7 +52,11 @@ public class ShopItem : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject == player && floatingText != null) Destroy(floatingText, .25f);
+        if (collision.gameObject == player && floatingText != null)
+        {
+            canBuy = false;
+            Destroy(floatingText, .25f);
+        }
     }
 
 

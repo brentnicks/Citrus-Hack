@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Planter : MonoBehaviour
 {
-    bool canPlant = true;
+    public bool canPlant = true;
     GameManager gm;
     public GameObject seed1, seed2, seed3;
     public GameObject enemy1, enemy2, enemy3;
@@ -81,6 +81,7 @@ public class Planter : MonoBehaviour
         if (seed == 1) Instantiate(enemy1, transform.position, Quaternion.identity);
         if (seed == 2) Instantiate(enemy2, transform.position, Quaternion.identity);
         if (seed == 3) Instantiate(enemy3, transform.position, Quaternion.identity);
+        seed = 0;
 
     }
 }

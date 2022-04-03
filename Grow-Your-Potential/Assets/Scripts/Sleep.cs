@@ -14,7 +14,12 @@ public class Sleep : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E) && canSleep)
         {
             gm.removeAllEnemies();
+            gm.hatchSeeds();
             gm.increaseDayNumber();
+            foreach (Planter plant in gm.planters)
+            {
+                plant.canPlant = true;
+            }
         }
     }
 

@@ -80,7 +80,7 @@ public class GameManager : MonoBehaviour
 
     public void updateCoins()
     {
-        coinCounter.GetComponent<Text>().text = "Coins: " + coins;
+        coinCounter.GetComponent<Text>().text = coins.ToString();
     }
 
     public void updateSeedText()
