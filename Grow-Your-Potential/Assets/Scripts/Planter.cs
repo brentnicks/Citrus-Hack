@@ -15,7 +15,7 @@ public class Planter : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            if (Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKey(KeyCode.E) && canPlant)
             {
                 plantSeed();
             }
@@ -30,19 +30,33 @@ public class Planter : MonoBehaviour
         {
             case 1:
                 if (gm.seed1 > 0)
-                --gm.seed1;
+                {
+                    --gm.seed1;
+                    canPlant = false;
+                }
+
                 break;
             case 2:
                 if (gm.seed2 > 0)
-                --gm.seed2;
+                {
+                    --gm.seed2;
+                    canPlant = false;
+                }
+                
                 break;
             case 3:
                 if (gm.seed3 > 0)
-                --gm.seed3;
+                {
+                    --gm.seed3;
+                    canPlant = false;
+                }
+                
                 break;
             default:
                 Debug.Log("invalid");
                 break;
         }
+        gm.updateCoins();
+        gm.updateSeedText();
     }
 }

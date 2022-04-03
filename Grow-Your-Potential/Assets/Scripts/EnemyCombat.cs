@@ -8,7 +8,7 @@ public class EnemyCombat : MonoBehaviour
     public float attackDelay;
 
     protected bool canAttack = true;
-    protected float attackTimer;
+    protected float attackTimer = 0;
     protected GameObject player;
     protected EnemyMovement movement;
 

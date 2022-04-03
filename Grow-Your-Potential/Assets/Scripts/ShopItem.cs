@@ -13,17 +13,16 @@ public class ShopItem : MonoBehaviour
     private void Start()
     {
         gm = GameObject.Find("GameManager").GetComponent<GameManager>();
-        player = GameObject.Find("Player");
+        player = GameObject.FindWithTag("Player");
     }
 
     private void Update()
     {
         distance = Vector3.Distance(player.transform.position, this.transform.position);
-        if (Input.GetKeyDown(KeyCode.E) && distance < 1)
+        if (Input.GetKeyDown(KeyCode.E) && distance < 0.5)
         {
             buyItem();
         }
-
     }
 
     public void buyItem()

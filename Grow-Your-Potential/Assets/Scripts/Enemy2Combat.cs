@@ -9,7 +9,7 @@ public class Enemy2Combat : EnemyCombat
 
     public override void attack(){
         StartCoroutine(dash());
-        // StartCoroutine(movement.LockDirection(dashSpeed));
+        StartCoroutine(movement.LockDirection(dashSpeed));
         attackTimer = 0;
         canAttack = false;
     }
