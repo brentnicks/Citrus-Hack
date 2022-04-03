@@ -19,10 +19,9 @@ public class ShopItem : MonoBehaviour
         player = GameObject.FindWithTag("Player");
     }
 
-    private void Update()
+    private void OnTriggerStay2D(Collider2D collision)
     {
-        distance = Vector3.Distance(player.transform.position, this.transform.position);
-        if (Input.GetKeyDown(KeyCode.E) && distance < 0.5)
+        if (Input.GetKey(KeyCode.E) && collision.gameObject == player)
         {
             buyItem();
         }
