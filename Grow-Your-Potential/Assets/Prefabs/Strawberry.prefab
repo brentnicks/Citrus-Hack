@@ -15,9 +15,10 @@ GameObject:
   - component: {fileID: -4304250365669337197}
   - component: {fileID: 4870814521059262720}
   - component: {fileID: 774412110750281532}
+  - component: {fileID: -4213594597731566283}
   m_Layer: 0
   m_Name: Strawberry
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -75,7 +76,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: -6768980867453737029, guid: 11cac3043b1a3e04380c05298186bc9b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -134,10 +135,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b59bd46435aecaa4080339ca6727509c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 0
+  health: 5
   attackDelay: 0
   recoilForce: 50
-  enemyRigidBody: {fileID: 0}
+  enemyRigidBody: {fileID: 774412110750281532}
   coin: {fileID: 222672941963541222, guid: a21721cdc5ec9ed4ab7d475f76cb68e8, type: 3}
 --- !u!114 &4870814521059262720
 MonoBehaviour:
@@ -174,3 +175,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &-4213594597731566283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2625401015215263277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e819366658644e90bc8c031fa7728ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

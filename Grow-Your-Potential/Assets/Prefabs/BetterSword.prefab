@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8905338945359435191}
   - component: {fileID: 8905338945359435190}
   - component: {fileID: 8084749947150576594}
+  - component: {fileID: 418429465806473023}
   m_Layer: 0
   m_Name: BetterSword
   m_TagString: Untagged
@@ -125,3 +126,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.10631561, y: 1.3364964}
   m_EdgeRadius: 0
+--- !u!114 &418429465806473023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8905338945359435189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ff5b5f6e034f4466937afb612cea254, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 0}
+  slashTime: 0.1
+  something: {fileID: 0}
+  knockback: 100
+  damage: 3

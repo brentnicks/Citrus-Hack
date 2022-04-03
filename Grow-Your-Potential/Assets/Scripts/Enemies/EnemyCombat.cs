@@ -27,7 +27,8 @@ public class EnemyCombat : MonoBehaviour
     }
     public void takeDamage(int damageTaken){
         GameObject newObj = this.gameObject;
-        if (health > damageTaken){
+        Debug.Log(damageTaken);
+        if (health < damageTaken){
             Instantiate(coin, gameObject.transform.position, Quaternion.identity);
             Destroy(this.gameObject);
         }
