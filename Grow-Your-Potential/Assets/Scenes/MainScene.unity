@@ -22069,6 +22069,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5836219513996007394, guid: 351d66ec58cfa7b479331aafdfe5b053, type: 3}
+      propertyPath: m_FontData.m_Alignment
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6042242395229191567, guid: 351d66ec58cfa7b479331aafdfe5b053, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -22156,6 +22160,14 @@ PrefabInstance:
     - target: {fileID: 6042242395229191571, guid: 351d66ec58cfa7b479331aafdfe5b053, type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 6069317779139691712, guid: 351d66ec58cfa7b479331aafdfe5b053, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6069317779139691712, guid: 351d66ec58cfa7b479331aafdfe5b053, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 5.7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 351d66ec58cfa7b479331aafdfe5b053, type: 3}
