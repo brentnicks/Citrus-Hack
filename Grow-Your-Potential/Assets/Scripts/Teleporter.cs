@@ -19,10 +19,12 @@ public class Teleporter : MonoBehaviour
     {
         GameObject.FindWithTag("Player").transform.position = teleportLocation;
         GameObject.FindWithTag("Player").GetComponent<PlayerMovement>().enabled = true;
+
         GameObject camera = GameObject.FindGameObjectWithTag("MainCamera");
         camera.transform.position = new Vector3(teleportLocation.x, teleportLocation.y, -10);
         CameraFollow cf = camera.GetComponent<CameraFollow>();
         cf.isFrozen = !cf.isFrozen;
-        Debug.Log(cf.isFrozen);
+
+        Sleep.hasSlept = false;
     }
 }

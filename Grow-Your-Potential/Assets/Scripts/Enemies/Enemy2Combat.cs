@@ -9,7 +9,7 @@ public class Enemy2Combat : EnemyCombat
     public int shotsPerDash;
     public Projectile proj;
     public Vector3 direction; 
-    private int timesShot;
+    protected int timesShot;
 
     public override void attack(){
         shoot();
@@ -22,7 +22,7 @@ public class Enemy2Combat : EnemyCombat
         canAttack = false;
     }
 
-    private IEnumerator dash(){
+    protected virtual IEnumerator dash(){
         movement.movementSpeed += dashSpeed;
         movement.movementSpeed = -movement.movementSpeed;
         yield return new WaitForSeconds(dashTime);
@@ -35,7 +35,7 @@ public class Enemy2Combat : EnemyCombat
         newProj.direction = player.transform.position - gameObject.transform.position;
         float rotation = Mathf.Atan2(direction.x, direction.y) * Mathf.Rad2Deg;
         newProj.transform.rotation = Quaternion.Euler(0, 0, rotation);
-        Debug.Log(newProj.transform.rotation);
+        // Debug.Log(newProj.transform.rotation);
         //newProj.SetDirection();
         timesShot++;
     }
@@ -44,7 +44,7 @@ public class Enemy2Combat : EnemyCombat
         base.Start();
         timesShot = 0;
     }
-    void Update(){
+    protected virtual void Update(){
         Vector3 playerPos = player.transform.position;
         Vector3 currPos = gameObject.transform.position;
         Vector3 posDiff = playerPos - currPos;
