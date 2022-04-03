@@ -7,6 +7,11 @@ public class PlayerCombat : MonoBehaviour
     private GameObject enemy; 
     public GameObject testObject; 
     public float slashTime = 0.5f; 
+
+    public void takeDamage(){
+
+    }
+
     // Start is called before the first frame update
     void Start()
     {

@@ -25,15 +25,15 @@ public class EnemyCombat : MonoBehaviour
     public virtual void attack(){
 
     }
-    public void takeDamage(){
+    public void takeDamage(int damageTaken){
         GameObject newObj = this.gameObject;
-        if (health == 0){
+        if (health > damageTaken){
             Instantiate(coin, gameObject.transform.position, Quaternion.identity);
             Destroy(this.gameObject);
         }
         else
         {
-            health--;
+            health -= damageTaken;
         }
     }
 
