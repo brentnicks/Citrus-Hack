@@ -32,6 +32,7 @@ public class Enemy2Combat : EnemyCombat
     private void shoot(){
         Projectile newProj = Instantiate(proj, gameObject.transform.position, Quaternion.identity);
         newProj.direction = player.transform.position - gameObject.transform.position;
+        // newProj.SetDirection(player.transform.position - gameObject.transform.position);
         timesShot++;
     }
 

@@ -18,8 +18,16 @@ public class Projectile : MonoBehaviour
         }
     }
 
+    public void SetDirection(Vector3 newDirection){
+        direction = newDirection;
+        rb.velocity = direction.normalized * speed;
+        transform.rotation = Quaternion.Euler(0, 0, Mathf.Atan2(rb.velocity.y, rb.velocity.x) * Mathf.Rad2Deg);
+    }
+
     void Start(){
         rb = gameObject.GetComponent<Rigidbody2D>();
         rb.velocity = direction.normalized * speed;
+        // transform.rotation = Quaternion.Euler(0, 0, Mathf.Atan2(rb.velocity.y, rb.velocity.x) * Mathf.Rad2Deg);
+        transform.rotation = Quaternion.Euler(rb.velocity.normalized);
     }
 }
