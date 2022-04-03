@@ -6,20 +6,25 @@ using TMPro;
 public class Sleep : MonoBehaviour
 {
     public GameManager gm;
+    public WeedSpawner weedSpawner;
     public GameObject floatingTextPrefab;
+    public static bool hasSlept = false;
     GameObject floatingText;
     bool canSleep = false;
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && canSleep)
+        if (Input.GetKeyDown(KeyCode.E) && canSleep && !hasSlept)
         {
             gm.removeAllEnemies();
             gm.hatchSeeds();
             gm.increaseDayNumber();
+            weedSpawner.RemoveWeeds();
+            weedSpawner.spawnPlants();
             foreach (Planter plant in gm.planters)
             {
                 plant.canPlant = true;
             }
+            hasSlept = true;
         }
     }
 
