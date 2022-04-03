@@ -8,7 +8,15 @@ public class TeleportToFarm : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            collision.gameObject.transform.position = new Vector3(7, 4, 0);
+            Invoke("teleportPlayer", 0.25f);
+            collision.gameObject.GetComponent<PlayerMovement>().enabled = false;
+            collision.gameObject.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
         }
+    }
+
+    private void teleportPlayer()
+    {
+        GameObject.FindWithTag("Player").transform.position = new Vector3(7, 5.2f, 0);
+        GameObject.FindWithTag("Player").GetComponent<PlayerMovement>().enabled = true;
     }
 }
