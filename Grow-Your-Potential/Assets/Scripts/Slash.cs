@@ -5,7 +5,7 @@ using UnityEngine;
 public class Slash : MonoBehaviour
 {
     public GameObject enemy;
-    public float slashTime = 0.1f   ;
+    public float slashTime = 0.1f;
     public GameObject something; 
     public float knockback = 100f; 
     private Rigidbody2D rb; 
