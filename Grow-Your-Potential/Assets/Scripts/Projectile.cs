@@ -6,6 +6,7 @@ public class Projectile : MonoBehaviour
 {
     public float speed;
     public bool disappearOnHit;
+    public int damage;
     public Vector3 direction;
     private Rigidbody2D rb;
     public GameObject player; 
