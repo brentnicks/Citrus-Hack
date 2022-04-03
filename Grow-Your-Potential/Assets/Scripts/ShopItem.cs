@@ -13,7 +13,7 @@ public class ShopItem : MonoBehaviour
     private void Start()
     {
         gm = GameObject.Find("GameManager").GetComponent<GameManager>();
-        player = GameObject.Find("Player");
+        player = GameObject.FindWithTag("Player");
     }
 
     private void Update()
