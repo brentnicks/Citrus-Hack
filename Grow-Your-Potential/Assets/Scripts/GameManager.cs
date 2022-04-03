@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     public int coins = 5;
     public int seed1 = 0, seed2 = 0, seed3 = 0;
     public Text textSeed1, textSeed2, textSeed3;
+    public Planter[] planters;
 
     private void Start()
     {
@@ -37,7 +38,7 @@ public class GameManager : MonoBehaviour
     public void increaseDayNumber()
     {
         ++dayNumber;
-        dayCounter.GetComponent<Text>().text = "Day: " + dayCounter;
+        dayCounter.GetComponent<Text>().text = "Day: " + dayNumber;
     }
 
     public void changeSeed()
@@ -87,5 +88,15 @@ public class GameManager : MonoBehaviour
         textSeed1.text = seed1.ToString();
         textSeed2.text = seed2.ToString();
         textSeed3.text = seed3.ToString();
+    }
+
+
+
+    public void hatchSeeds()
+    {
+        foreach (Planter plant in planters)
+        {
+            plant.hatchEnemy();
+        }
     }
 }
