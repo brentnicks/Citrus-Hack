@@ -47,6 +47,14 @@ public class ShopItem : MonoBehaviour
             {
                 floatingText.GetComponentInChildren<TextMeshPro>().text = "High Potential Seed";
             }
+            else if (item == "better")
+            {
+                floatingText.GetComponentInChildren<TextMeshPro>().text = "Iron Sword";
+            }
+            else if (item == "best")
+            {
+                floatingText.GetComponentInChildren<TextMeshPro>().text = "Gold Sword";
+            }
         }
     }
 
@@ -77,6 +85,15 @@ public class ShopItem : MonoBehaviour
                     break;
                 case "high":
                     ++gm.seed3;
+                    break;
+                case "better":
+                    //implement damage increase
+                    Destroy(gameObject);
+                    break;
+
+                case "best":
+                    //implement better damage increase;
+                    Destroy(gameObject);
                     break;
                 default:
                     Debug.Log("Invalid");
