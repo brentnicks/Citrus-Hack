@@ -13,11 +13,13 @@ public class GameManager : MonoBehaviour
     public int seed1 = 0, seed2 = 0, seed3 = 0;
     public Text textSeed1, textSeed2, textSeed3;
     public Planter[] planters;
+    private WeedSpawner spawner;
 
     private void Start()
     {
         updateCoins();
         updateSeedText();
+        //spawner.SpawnPlants(); 
     }
     private void Update()
     {
