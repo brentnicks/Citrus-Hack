@@ -4,11 +4,8 @@ using UnityEngine;
 
 public class Enemy3Combat : Enemy2Combat
 {
-    
-
-    // Update is called once per frame
-    void Update()
+    protected override void shoot()
     {
-        
+        base.shoot();
     }
 }
