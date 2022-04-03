@@ -180,7 +180,6 @@ MonoBehaviour:
   shotsPerDash: 3
   proj: {fileID: -7931883359807037812, guid: c85979381bbbc7e4e9da0a617086b88f, type: 3}
   direction: {x: 0, y: 0, z: 0}
-  timesShot: 0
   projectileSpread: 45
   timeBetweenShots: 1
   freezeTime: 3
