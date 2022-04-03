@@ -36,5 +36,8 @@ public class Slash : MonoBehaviour
             knock = collision.gameObject.GetComponent<Rigidbody2D>(); 
             knock.velocity = new Vector2(5, 0);
         }
+        else if (collision.gameObject.tag == "Weed"){
+            collision.gameObject.GetComponent<Weed>().RemoveWeed();
+        }
     }
 }
