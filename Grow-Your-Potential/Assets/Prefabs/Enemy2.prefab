@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 4779809075902669286}
   - component: {fileID: 1994129167}
   - component: {fileID: 925506434}
+  - component: {fileID: 8848737890169661076}
   m_Layer: 0
   m_Name: Enemy2
   m_TagString: Enemy
@@ -159,6 +160,7 @@ MonoBehaviour:
   dashTime: 0.25
   shotsPerDash: 1
   proj: {fileID: 5195186160383456648, guid: 74c8c46802c962e4f9e2e6b9d3173e8f, type: 3}
+  direction: {x: 0, y: 0, z: 0}
 --- !u!95 &925506434
 Animator:
   serializedVersion: 3
@@ -178,3 +180,15 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &8848737890169661076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1250084737759428376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e819366658644e90bc8c031fa7728ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
