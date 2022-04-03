@@ -1,23 +1,28 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerCombat : MonoBehaviour
 {
     private GameObject enemy; 
     public GameObject sword; 
+    public GameObject healthBar;
+
+    public float health = 100;
     public float slashTime = 0.5f; 
     public float slashCooldown;
     private float slashTimer;
 
-    public void takeDamage(){
-
+    public void takeDamage(int damageTaken){
+        healthBar.GetComponent<Text>().text = "Health: " + health;
     }
 
     // Start is called before the first frame update
     void Start()
     {
         slashTimer = slashCooldown;
+        healthBar.GetComponent<Text>().text = "Health: " + health;
     }
 
     //public void takeDamage(); 

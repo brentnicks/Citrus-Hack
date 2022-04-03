@@ -16,6 +16,10 @@ public class Slash : MonoBehaviour
     void Start()
     {
         if (isActive){
+            GameObject player = GameObject.FindGameObjectWithTag("Player");
+            if (gameObject.transform.position.x < player.transform.position.x){
+                transform.rotation = Quaternion.Euler(0, 180, 0);
+            }
             Destroy(gameObject, slashTime);
             rb = gameObject.GetComponent<Rigidbody2D>();
         }
@@ -32,11 +36,5 @@ public class Slash : MonoBehaviour
             knock = collision.gameObject.GetComponent<Rigidbody2D>(); 
             knock.velocity = new Vector2(5, 0);
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
