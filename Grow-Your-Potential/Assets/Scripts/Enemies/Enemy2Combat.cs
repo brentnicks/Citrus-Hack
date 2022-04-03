@@ -8,6 +8,7 @@ public class Enemy2Combat : EnemyCombat
     public float dashTime;
     public int shotsPerDash;
     public Projectile proj;
+    public Vector3 direction; 
     private int timesShot;
 
     public override void attack(){
@@ -32,7 +33,10 @@ public class Enemy2Combat : EnemyCombat
     protected virtual void shoot(){
         Projectile newProj = Instantiate(proj, gameObject.transform.position, Quaternion.identity);
         newProj.direction = player.transform.position - gameObject.transform.position;
-        // newProj.SetDirection(player.transform.position - gameObject.transform.position);
+        float rotation = Mathf.Atan2(direction.x, direction.y) * Mathf.Rad2Deg;
+        newProj.transform.rotation = Quaternion.Euler(0, 0, rotation);
+        Debug.Log(newProj.transform.rotation);
+        //newProj.SetDirection();
         timesShot++;
     }
 
