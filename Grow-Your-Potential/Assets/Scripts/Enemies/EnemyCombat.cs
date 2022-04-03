@@ -16,7 +16,7 @@ public class EnemyCombat : MonoBehaviour
     protected EnemyMovement movement;
     public GameObject coin;
 
-    void Start(){
+    protected virtual void Start(){
         player = GameObject.FindGameObjectWithTag("Player");
         movement = gameObject.GetComponent<EnemyMovement>();
         enemyRigidBody = gameObject.GetComponent<Rigidbody2D>(); 
