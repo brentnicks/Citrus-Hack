@@ -9,6 +9,7 @@ public class EnemyCombat : MonoBehaviour
     public float recoilForce = 50f; 
 
     public Rigidbody2D enemyRigidBody; 
+    public int collisionDamage;
 
     protected bool canAttack = true;
     protected float attackTimer = 0;
@@ -40,8 +41,7 @@ public class EnemyCombat : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D coll){
         if (coll.gameObject.tag == "Player"){
-            Debug.Log("Hit player");
-            // coll.GetComponent<PlayerCombat>().takeDamage();
+            coll.gameObject.GetComponent<PlayerCombat>().takeDamage(collisionDamage);
         }
     }
 

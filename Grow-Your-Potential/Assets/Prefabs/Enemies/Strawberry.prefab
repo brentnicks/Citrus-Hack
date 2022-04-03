@@ -139,6 +139,7 @@ MonoBehaviour:
   attackDelay: 0
   recoilForce: 50
   enemyRigidBody: {fileID: 774412110750281532}
+  collisionDamage: 5
   coin: {fileID: 222672941963541222, guid: a21721cdc5ec9ed4ab7d475f76cb68e8, type: 3}
 --- !u!114 &4870814521059262720
 MonoBehaviour:
