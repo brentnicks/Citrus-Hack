@@ -15,7 +15,7 @@ public class Planter : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            if (Input.GetKeyDown(KeyCode.E) && canPlant)
+            if (Input.GetKey(KeyCode.E) && canPlant)
             {
                 plantSeed();
             }
@@ -56,5 +56,7 @@ public class Planter : MonoBehaviour
                 Debug.Log("invalid");
                 break;
         }
+        gm.updateCoins();
+        gm.updateSeedText();
     }
 }
