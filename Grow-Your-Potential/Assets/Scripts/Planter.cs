@@ -8,12 +8,14 @@ public class Planter : MonoBehaviour
     GameManager gm;
     public GameObject seed1, seed2, seed3;
     public GameObject enemy1, enemy2, enemy3;
+    private AudioSource source;
     int seed = 0;
     GameObject currSeed;
 
     private void Start()
     {
         gm = GameObject.Find("GameManager").GetComponent<GameManager>();
+        source = gameObject.GetComponent<AudioSource>();
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
@@ -38,6 +40,7 @@ public class Planter : MonoBehaviour
                     --gm.seed1;
                     seed = 1;
                     SpawnPlant(seed1);
+                    source.Play();
                     canPlant = false;
                 }
 
@@ -48,6 +51,7 @@ public class Planter : MonoBehaviour
                     --gm.seed2;
                     seed = 2;
                     SpawnPlant(seed2);
+                    source.Play();
                     canPlant = false;
                 }
                 
@@ -58,6 +62,7 @@ public class Planter : MonoBehaviour
                     --gm.seed3;
                     seed = 3;
                     SpawnPlant(seed3);
+                    source.Play();
                     canPlant = false;
                 }
                 
