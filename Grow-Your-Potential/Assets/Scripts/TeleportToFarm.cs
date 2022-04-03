@@ -18,5 +18,8 @@ public class TeleportToFarm : MonoBehaviour
     {
         GameObject.FindWithTag("Player").transform.position = new Vector3(7, 5.2f, 0);
         GameObject.FindWithTag("Player").GetComponent<PlayerMovement>().enabled = true;
+
+        GameObject camera = GameObject.FindGameObjectWithTag("MainCamera");
+        camera.GetComponent<CameraFollow>().isFrozen = false;
     }
 }

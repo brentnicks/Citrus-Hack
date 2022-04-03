@@ -11,6 +11,8 @@ public class ShopItem : MonoBehaviour
     double distance;
     GameObject player;
     public GameObject floatingTextPrefab;
+    public GameObject betterSword;
+    public GameObject bestSword;
     GameObject floatingText;
     bool canBuy = false;
 
@@ -88,13 +90,14 @@ public class ShopItem : MonoBehaviour
                     break;
                 case "better":
                     //implement damage increase
-                    player.GetComponent<PlayerCombat>().sword = this.gameObject; 
+                    player.GetComponent<PlayerCombat>().sword = betterSword;
                     Destroy(gameObject);
                     break;
 
                 case "best":
+
                     //implement better damage increase;
-                    player.GetComponent<PlayerCombat>().sword = this.gameObject; 
+                    player.GetComponent<PlayerCombat>().sword = bestSword;
                     Destroy(gameObject);
                     break;
                 default:

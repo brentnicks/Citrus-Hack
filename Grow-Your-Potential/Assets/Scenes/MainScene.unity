@@ -179,6 +179,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6113581356801129113, guid: 8721e8483f3eb424e85d409aac260f05, type: 3}
+      propertyPath: coins
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 6113581356801129113, guid: 8721e8483f3eb424e85d409aac260f05, type: 3}
       propertyPath: border1
       value: 
       objectReference: {fileID: 1220079223}
@@ -1248,7 +1252,7 @@ GameObject:
   - component: {fileID: 262855705}
   - component: {fileID: 262855707}
   - component: {fileID: 262855706}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Planter5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5085,7 +5089,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 554290310}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Planters
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5296,7 +5300,7 @@ GameObject:
   - component: {fileID: 693091179}
   - component: {fileID: 693091181}
   - component: {fileID: 693091180}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Planter4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10127,7 +10131,7 @@ GameObject:
   - component: {fileID: 717326859}
   - component: {fileID: 717326861}
   - component: {fileID: 717326860}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Planter3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10379,7 +10383,7 @@ GameObject:
   - component: {fileID: 861883505}
   - component: {fileID: 861883507}
   - component: {fileID: 861883506}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Planter1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24551,7 +24555,7 @@ GameObject:
   - component: {fileID: 1803875592}
   - component: {fileID: 1803875594}
   - component: {fileID: 1803875593}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Planter2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24719,6 +24723,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1838071805}
+  isFrozen: 0
 --- !u!1 &1862528984 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2561203627976022920, guid: 351d66ec58cfa7b479331aafdfe5b053, type: 3}
@@ -24969,6 +24974,18 @@ PrefabInstance:
       propertyPath: cost
       value: 70
       objectReference: {fileID: 0}
+    - target: {fileID: 5034775710618712954, guid: 52a4bb293a7913a40abbafa1dbbf8e45, type: 3}
+      propertyPath: bestSword
+      value: 
+      objectReference: {fileID: 5034775710618712953, guid: 52a4bb293a7913a40abbafa1dbbf8e45, type: 3}
+    - target: {fileID: 5034775710618712954, guid: 52a4bb293a7913a40abbafa1dbbf8e45, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5034775710618712954, guid: 52a4bb293a7913a40abbafa1dbbf8e45, type: 3}
+      propertyPath: betterSword
+      value: 
+      objectReference: {fileID: 8905338945359435189, guid: 333070cec2a999949a0eb1ebf7464fda, type: 3}
     - target: {fileID: 5034775710618712956, guid: 52a4bb293a7913a40abbafa1dbbf8e45, type: 3}
       propertyPath: m_RootOrder
       value: 23
@@ -25013,6 +25030,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7792970507477883184, guid: 52a4bb293a7913a40abbafa1dbbf8e45, type: 3}
+      propertyPath: isActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 52a4bb293a7913a40abbafa1dbbf8e45, type: 3}
 --- !u!1001 &2839074964944750833
@@ -25022,6 +25043,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 418429465806473023, guid: 333070cec2a999949a0eb1ebf7464fda, type: 3}
+      propertyPath: isActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8905338945359435184, guid: 333070cec2a999949a0eb1ebf7464fda, type: 3}
       propertyPath: m_RootOrder
       value: 21
@@ -25070,6 +25095,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: BetterSword
       objectReference: {fileID: 0}
+    - target: {fileID: 8905338945359435190, guid: 333070cec2a999949a0eb1ebf7464fda, type: 3}
+      propertyPath: bestSword
+      value: 
+      objectReference: {fileID: 5034775710618712953, guid: 52a4bb293a7913a40abbafa1dbbf8e45, type: 3}
+    - target: {fileID: 8905338945359435190, guid: 333070cec2a999949a0eb1ebf7464fda, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8905338945359435190, guid: 333070cec2a999949a0eb1ebf7464fda, type: 3}
+      propertyPath: betterSword
+      value: 
+      objectReference: {fileID: 8905338945359435189, guid: 333070cec2a999949a0eb1ebf7464fda, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 333070cec2a999949a0eb1ebf7464fda, type: 3}
 --- !u!1001 &3042554960733780390

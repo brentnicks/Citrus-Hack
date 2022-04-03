@@ -19,5 +19,9 @@ public class TeleportToShop : MonoBehaviour
     {
         GameObject.FindWithTag("Player").transform.position = new Vector3(49, 4.0f, 0);
         GameObject.FindWithTag("Player").GetComponent<PlayerMovement>().enabled = true;
+
+        GameObject camera = GameObject.FindGameObjectWithTag("MainCamera");
+        camera.transform.position = new Vector3(49, 7.5f, -10);
+        camera.GetComponent<CameraFollow>().isFrozen = true;
     }
 }

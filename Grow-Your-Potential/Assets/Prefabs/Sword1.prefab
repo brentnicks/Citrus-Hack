@@ -102,6 +102,7 @@ MonoBehaviour:
   something: {fileID: 0}
   knockback: 100
   damage: 1
+  isActive: 1
 --- !u!61 &7346981269261932874
 BoxCollider2D:
   m_ObjectHideFlags: 0

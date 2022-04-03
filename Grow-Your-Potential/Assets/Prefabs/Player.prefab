@@ -164,6 +164,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sword: {fileID: 7346981269261932878, guid: 0611253b6280a46d4b71c008193c76f5, type: 3}
   slashTime: 0.5
+  slashCooldown: 0.5
 --- !u!95 &313104510
 Animator:
   serializedVersion: 3

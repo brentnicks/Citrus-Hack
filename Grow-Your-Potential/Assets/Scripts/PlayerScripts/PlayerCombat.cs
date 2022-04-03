@@ -7,6 +7,8 @@ public class PlayerCombat : MonoBehaviour
     private GameObject enemy; 
     public GameObject sword; 
     public float slashTime = 0.5f; 
+    public float slashCooldown;
+    private float slashTimer;
 
     public void takeDamage(){
 
@@ -15,7 +17,7 @@ public class PlayerCombat : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-    
+        slashTimer = slashCooldown;
     }
 
     //public void takeDamage(); 
@@ -35,12 +37,16 @@ public class PlayerCombat : MonoBehaviour
         //     Instantiate(testObject, worldPosition, Quaternion.identity);
         //     Destroy(testObject, 2f);
         // }
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1") && slashTimer >= slashCooldown)
         {
             Vector3 worldMousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             Vector2 direction = (Vector2)((worldMousePos - transform.position));
             direction.Normalize();
             Instantiate(sword, transform.position + (Vector3)(direction * 0.5f), Quaternion.identity);
+            slashTimer = 0;
+        }
+        else if (slashTimer < slashCooldown){
+            slashTimer += Time.deltaTime;
         }
     }
 }
