@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 4
-  m_Sprite: {fileID: 21300000, guid: aa793db44458aae488bf8d7030256e56, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1e6018053ffbc7c4a828512fe94ee237, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -98,7 +98,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 0}
-  slashTime: 0.1
+  slashTime: 0.25
   something: {fileID: 0}
   knockback: 100
   damage: 1

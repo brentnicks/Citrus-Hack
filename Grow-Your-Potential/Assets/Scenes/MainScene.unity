@@ -24986,6 +24986,10 @@ PrefabInstance:
       propertyPath: betterSword
       value: 
       objectReference: {fileID: 8905338945359435189, guid: 333070cec2a999949a0eb1ebf7464fda, type: 3}
+    - target: {fileID: 5034775710618712955, guid: 52a4bb293a7913a40abbafa1dbbf8e45, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 34b34b79f4f937445a2c4ebcbe19e49c, type: 3}
     - target: {fileID: 5034775710618712956, guid: 52a4bb293a7913a40abbafa1dbbf8e45, type: 3}
       propertyPath: m_RootOrder
       value: 23
@@ -25107,6 +25111,10 @@ PrefabInstance:
       propertyPath: betterSword
       value: 
       objectReference: {fileID: 8905338945359435189, guid: 333070cec2a999949a0eb1ebf7464fda, type: 3}
+    - target: {fileID: 8905338945359435191, guid: 333070cec2a999949a0eb1ebf7464fda, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7b7ee823cf046ba469a7844d5ddc8b24, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 333070cec2a999949a0eb1ebf7464fda, type: 3}
 --- !u!1001 &3042554960733780390

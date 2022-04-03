@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 6
-  m_Sprite: {fileID: 21300000, guid: 34b34b79f4f937445a2c4ebcbe19e49c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 267eb7fdf1239c142a10a22853ff9770, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -100,6 +100,8 @@ MonoBehaviour:
   cost: 30
   item: best
   floatingTextPrefab: {fileID: 4689767091672851696, guid: 4ee3766c9bb318343945e2f8bf4a8535, type: 3}
+  betterSword: {fileID: 0}
+  bestSword: {fileID: 0}
 --- !u!61 &5655340798601594142
 BoxCollider2D:
   m_ObjectHideFlags: 0
