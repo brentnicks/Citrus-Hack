@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class Sleep : MonoBehaviour
@@ -8,9 +9,11 @@ public class Sleep : MonoBehaviour
     public GameManager gm;
     public WeedSpawner weedSpawner;
     public GameObject floatingTextPrefab;
+    public float fadeSpeed;
     public static bool hasSlept = false;
     GameObject floatingText;
     bool canSleep = false;
+    public GameObject darkness;
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.E) && canSleep && !hasSlept)
@@ -20,11 +23,31 @@ public class Sleep : MonoBehaviour
             gm.increaseDayNumber();
             weedSpawner.RemoveWeeds();
             weedSpawner.spawnPlants();
+            StartCoroutine(GoToSleep());
             foreach (Planter plant in gm.planters)
             {
                 plant.canPlant = true;
             }
             hasSlept = true;
+        }
+    }
+
+    private IEnumerator GoToSleep(){
+        PlayerMovement.isFrozen = true;
+        Image sr = darkness.GetComponent<Image>();
+        while (sr.color.a < 1){
+            Color newColor = sr.color;
+            newColor.a += fadeSpeed;
+            sr.color = newColor;
+            yield return null;
+        }
+        yield return new WaitForSeconds(2);
+        PlayerMovement.isFrozen = false;
+        while (sr.color.a > 0){
+            Color newColor = sr.color;
+            newColor.a -= fadeSpeed;
+            sr.color = newColor;
+            yield return null;
         }
     }
 
