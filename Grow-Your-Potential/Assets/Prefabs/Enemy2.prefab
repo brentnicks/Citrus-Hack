@@ -151,5 +151,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 5
   attackDelay: 4
+  recoilForce: 50
+  enemyRigidBody: {fileID: 0}
+  coin: {fileID: 222672941963541222, guid: 98462a1f1aa2ec64092bab25ff598cc9, type: 3}
   dashSpeed: 5
   dashTime: 0.25

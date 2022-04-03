@@ -6,10 +6,11 @@ public class PlayerCombat : MonoBehaviour
 {
     private GameObject enemy; 
     public GameObject testObject; 
+    public float slashTime = 0.5f; 
     // Start is called before the first frame update
     void Start()
     {
-        
+    
     }
 
     //public void takeDamage(); 

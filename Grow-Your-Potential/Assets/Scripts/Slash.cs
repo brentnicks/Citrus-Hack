@@ -4,20 +4,23 @@ using UnityEngine;
 
 public class Slash : MonoBehaviour
 {
+    public GameObject enemy;
+    public float slashTime = 0.1f;
+    public GameObject something; 
     // Start is called before the first frame update
     void Start()
     {
-        
+        Destroy(gameObject, slashTime);
     }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
         if ( collision.gameObject.tag == "Enemy" )
         {
-            Debug.Log("Weapon collided");
+            collision.gameObject.GetComponent<EnemyCombat>().takeDamage();
         }
     }
-    
+
     // Update is called once per frame
     void Update()
     {
