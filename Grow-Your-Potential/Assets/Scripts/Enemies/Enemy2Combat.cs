@@ -19,4 +19,5 @@ public class Enemy2Combat : EnemyCombat
         yield return new WaitForSeconds(dashTime);
         movement.movementSpeed -= dashSpeed;
     }
+
 }
