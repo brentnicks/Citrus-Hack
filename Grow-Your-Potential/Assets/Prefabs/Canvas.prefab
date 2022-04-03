@@ -86,6 +86,7 @@ GameObject:
   - component: {fileID: 7919538001679239612}
   - component: {fileID: 5224189732160639985}
   - component: {fileID: 4312106721740525912}
+  - component: {fileID: 2450231911042921671}
   m_Layer: 5
   m_Name: Low Potential Seed Text
   m_TagString: Untagged
@@ -155,6 +156,21 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 0
+--- !u!114 &2450231911042921671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 230419296253494043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 2, y: -2}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1569363256823133430
 GameObject:
   m_ObjectHideFlags: 0
@@ -370,6 +386,7 @@ GameObject:
   - component: {fileID: 4599135475083790800}
   - component: {fileID: 2007081477237551884}
   - component: {fileID: 1314916114781525091}
+  - component: {fileID: 225032651660184233}
   m_Layer: 5
   m_Name: High Potential Seed Text
   m_TagString: Untagged
@@ -439,6 +456,21 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 0
+--- !u!114 &225032651660184233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1953821503333284047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 2, y: -2}
+  m_UseGraphicAlpha: 1
 --- !u!1 &2561203627976022920
 GameObject:
   m_ObjectHideFlags: 0
@@ -450,6 +482,7 @@ GameObject:
   - component: {fileID: 6069317779139691712}
   - component: {fileID: 8407646571313122436}
   - component: {fileID: 5836219513996007394}
+  - component: {fileID: 4863262418283558169}
   m_Layer: 5
   m_Name: Coin
   m_TagString: Untagged
@@ -519,6 +552,21 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 5
+--- !u!114 &4863262418283558169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2561203627976022920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 2, y: -2}
+  m_UseGraphicAlpha: 1
 --- !u!1 &3362867304730644971
 GameObject:
   m_ObjectHideFlags: 0
@@ -584,7 +632,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 5445693354125081446, guid: 8817078a3ebc8a9438dad937220e3e4a, type: 3}
+  m_Sprite: {fileID: -2435028439340219864, guid: cbab07719eb9e7e4d8c101ea310914f8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -605,6 +653,7 @@ GameObject:
   - component: {fileID: 2054229759141888383}
   - component: {fileID: 1989396712906052309}
   - component: {fileID: 3075628400495281199}
+  - component: {fileID: 6800878809605067094}
   m_Layer: 5
   m_Name: Medium Potential Seed Text
   m_TagString: Untagged
@@ -674,6 +723,21 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 0
+--- !u!114 &6800878809605067094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3977964444298270429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 2, y: -2}
+  m_UseGraphicAlpha: 1
 --- !u!1 &5669723489268215401
 GameObject:
   m_ObjectHideFlags: 0
@@ -776,6 +840,7 @@ GameObject:
   - component: {fileID: 6042242394019567799}
   - component: {fileID: 6042242394019567797}
   - component: {fileID: 6042242394019567796}
+  - component: {fileID: 6334480874724381522}
   m_Layer: 5
   m_Name: Health Bar
   m_TagString: Untagged
@@ -844,6 +909,21 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 'Health: 100'
+--- !u!114 &6334480874724381522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6042242394019567798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 2, y: -2}
+  m_UseGraphicAlpha: 1
 --- !u!1 &6042242394657861491
 GameObject:
   m_ObjectHideFlags: 0
@@ -855,6 +935,7 @@ GameObject:
   - component: {fileID: 6042242394657861488}
   - component: {fileID: 6042242394657861486}
   - component: {fileID: 6042242394657861489}
+  - component: {fileID: 5219148032850801508}
   m_Layer: 5
   m_Name: Day Counter
   m_TagString: Untagged
@@ -923,6 +1004,21 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 'Day: 1'
+--- !u!114 &5219148032850801508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6042242394657861491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 2, y: -2}
+  m_UseGraphicAlpha: 1
 --- !u!1 &6042242395229191571
 GameObject:
   m_ObjectHideFlags: 0

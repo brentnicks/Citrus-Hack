@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 6
-  m_Sprite: {fileID: 21300000, guid: 34b34b79f4f937445a2c4ebcbe19e49c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f6af77138762cd54c9fa1141253d16d4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -96,7 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2eaff9c436b46b9428c3b21393e79c91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cost: 30
+  cost: 150
   item: better
   floatingTextPrefab: {fileID: 4689767091672851696, guid: 4ee3766c9bb318343945e2f8bf4a8535, type: 3}
 --- !u!61 &6292837780583778692

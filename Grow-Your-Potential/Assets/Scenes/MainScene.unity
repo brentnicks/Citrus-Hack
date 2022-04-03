@@ -24965,6 +24965,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BestSword
       objectReference: {fileID: 0}
+    - target: {fileID: 5034775710618712954, guid: 52a4bb293a7913a40abbafa1dbbf8e45, type: 3}
+      propertyPath: cost
+      value: 70
+      objectReference: {fileID: 0}
     - target: {fileID: 5034775710618712956, guid: 52a4bb293a7913a40abbafa1dbbf8e45, type: 3}
       propertyPath: m_RootOrder
       value: 23
@@ -25133,13 +25137,9 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 6696981519607003104, guid: 05ecaaa138cafe74296184a3c8346922, type: 3}
-      propertyPath: cost
-      value: 150
+      propertyPath: item
+      value: high
       objectReference: {fileID: 0}
-    - target: {fileID: 6696981519607003105, guid: 05ecaaa138cafe74296184a3c8346922, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: f6af77138762cd54c9fa1141253d16d4, type: 3}
     - target: {fileID: 6696981519607003107, guid: 05ecaaa138cafe74296184a3c8346922, type: 3}
       propertyPath: m_Name
       value: High Potential Seed
