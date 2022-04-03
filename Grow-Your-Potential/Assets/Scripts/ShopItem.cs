@@ -25,6 +25,8 @@ public class ShopItem : MonoBehaviour
         }
     }
 
+
+
     public void buyItem()
     {
         if (gm.coins >= cost)
