@@ -26,6 +26,7 @@ public class EnemyMovement : MonoBehaviour
         direction = rb.velocity;
         isLocked = true;
         yield return new WaitForSeconds(time);
+        Debug.Log("End lock");
         isLocked = false;
     }
 

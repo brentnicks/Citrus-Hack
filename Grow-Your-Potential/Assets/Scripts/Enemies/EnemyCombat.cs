@@ -16,7 +16,7 @@ public class EnemyCombat : MonoBehaviour
     protected EnemyMovement movement;
     public GameObject coin;
 
-    void Start(){
+    protected virtual void Start(){
         player = GameObject.FindGameObjectWithTag("Player");
         movement = gameObject.GetComponent<EnemyMovement>();
         enemyRigidBody = gameObject.GetComponent<Rigidbody2D>(); 
@@ -34,9 +34,6 @@ public class EnemyCombat : MonoBehaviour
         else
         {
             health--;
-            Vector2 direction;
-            direction = (enemyRigidBody.transform.position - player.transform.position).normalized;
-            enemyRigidBody.velocity = direction * recoilForce;
         }
     }
 
