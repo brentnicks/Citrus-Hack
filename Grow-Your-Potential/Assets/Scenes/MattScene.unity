@@ -132,7 +132,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3762498185721853979, guid: f1aa9d38ef84e0948aeda3b47fde8f67, type: 3}
       propertyPath: m_Name
-      value: Square
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 3762498185721853979, guid: f1aa9d38ef84e0948aeda3b47fde8f67, type: 3}
       propertyPath: m_TagString
@@ -186,6 +186,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9219339065170977151, guid: f1aa9d38ef84e0948aeda3b47fde8f67, type: 3}
+      propertyPath: testObject
+      value: 
+      objectReference: {fileID: 7346981269261932878, guid: 0611253b6280a46d4b71c008193c76f5, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f1aa9d38ef84e0948aeda3b47fde8f67, type: 3}
 --- !u!1 &139008752
