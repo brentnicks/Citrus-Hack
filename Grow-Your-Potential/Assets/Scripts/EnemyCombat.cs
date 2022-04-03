@@ -14,6 +14,7 @@ public class EnemyCombat : MonoBehaviour
     protected float attackTimer = 0;
     protected GameObject player;
     protected EnemyMovement movement;
+    public GameObject coin;
 
     void Start(){
         player = GameObject.FindGameObjectWithTag("Player");
@@ -27,6 +28,7 @@ public class EnemyCombat : MonoBehaviour
     public void takeDamage(){
         GameObject newObj = this.gameObject;
         if (health == 0){
+            Instantiate(coin, gameObject.transform.position, Quaternion.identity);
             Destroy(this.gameObject);
         }
         else
