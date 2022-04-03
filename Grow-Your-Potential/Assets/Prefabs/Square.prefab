@@ -160,4 +160,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8ca0f1655ac248f8850c60c7fc73b7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  testObject: {fileID: 0}
+  testObject: {fileID: 7346981269261932878, guid: 0611253b6280a46d4b71c008193c76f5, type: 3}
+  slashTime: 0.5

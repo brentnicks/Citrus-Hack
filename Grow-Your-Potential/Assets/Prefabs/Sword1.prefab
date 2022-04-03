@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7346981269261932872}
   - component: {fileID: 7346981269261932874}
   m_Layer: 0
-  m_Name: Square 1
+  m_Name: Sword1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: aa793db44458aae488bf8d7030256e56, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -97,6 +97,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 0}
+  slashTime: 0.1
+  something: {fileID: 0}
 --- !u!61 &7346981269261932874
 BoxCollider2D:
   m_ObjectHideFlags: 0
