@@ -15,7 +15,7 @@ public class Projectile : MonoBehaviour
         if (coll.gameObject.tag == "Player"){
             Debug.Log("Projectile hit player");
         }
-        if (disappearOnHit && coll.gameObject.tag != "Enemy"){
+        if (disappearOnHit && coll.gameObject.tag != "Enemy" && coll.gameObject.layer == 0){
             Destroy(this.gameObject);
         }
     }
