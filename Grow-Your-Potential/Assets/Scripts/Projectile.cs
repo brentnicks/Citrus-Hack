@@ -8,6 +8,7 @@ public class Projectile : MonoBehaviour
     public bool disappearOnHit;
     public Vector3 direction;
     private Rigidbody2D rb;
+    public GameObject player; 
 
     private void OnTriggerEnter2D(Collider2D coll){
         if (coll.gameObject.tag == "Player"){
@@ -18,10 +19,12 @@ public class Projectile : MonoBehaviour
         }
     }
 
-    public void SetDirection(Vector3 newDirection){
-        direction = newDirection;
-        rb.velocity = direction.normalized * speed;
-        transform.rotation = Quaternion.Euler(0, 0, Mathf.Atan2(rb.velocity.y, rb.velocity.x) * Mathf.Rad2Deg);
+    public void SetDirection(){
+        direction = player.transform.position - gameObject.transform.position; 
+        // rb.velocity = direction.normalized * speed;
+        // transform.rotation = Quaternion.Euler(0, 0, Mathf.Atan2(rb.velocity.y, rb.velocity.x) * Mathf.Rad2Deg);
+        float rotation = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        gameObject.transform.rotation = Quaternion.Euler(0.0f, 0.0f, rotation);
     }
 
     void Start(){
