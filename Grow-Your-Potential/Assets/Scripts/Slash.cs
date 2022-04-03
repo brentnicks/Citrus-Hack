@@ -5,7 +5,7 @@ using UnityEngine;
 public class Slash : MonoBehaviour
 {
     public GameObject enemy;
-    public float slashTime = 0.5f;
+    public float slashTime = 0.1f;
     public GameObject something; 
     // Start is called before the first frame update
     void Start()
