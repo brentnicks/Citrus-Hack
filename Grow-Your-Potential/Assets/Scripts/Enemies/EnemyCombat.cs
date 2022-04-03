@@ -34,9 +34,6 @@ public class EnemyCombat : MonoBehaviour
         else
         {
             health--;
-            Vector2 direction;
-            direction = (enemyRigidBody.transform.position - player.transform.position).normalized;
-            enemyRigidBody.velocity = direction * recoilForce;
         }
     }
 

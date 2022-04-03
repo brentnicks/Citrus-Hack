@@ -5,12 +5,15 @@ using UnityEngine;
 public class Slash : MonoBehaviour
 {
     public GameObject enemy;
-    public float slashTime = 0.1f;
+    public float slashTime = 0.1f   ;
     public GameObject something; 
+    public float knockback = 100f; 
+    private Rigidbody2D rb; 
     // Start is called before the first frame update
     void Start()
     {
         Destroy(gameObject, slashTime);
+        rb = gameObject.GetComponent<Rigidbody2D>();
     }
 
     void OnTriggerEnter2D(Collider2D collision)
@@ -18,6 +21,9 @@ public class Slash : MonoBehaviour
         if ( collision.gameObject.tag == "Enemy" )
         {
             collision.gameObject.GetComponent<EnemyCombat>().takeDamage();
+            Vector3 direction = collision.transform.position - transform.position;
+            direction.y = 0; 
+            collision.gameObject.GetComponent<Rigidbody2D>().AddForce(direction.normalized * knockback, ForceMode2D.Impulse);
         }
     }
 
