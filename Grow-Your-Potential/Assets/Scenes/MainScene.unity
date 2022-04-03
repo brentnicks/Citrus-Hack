@@ -210,6 +210,26 @@ PrefabInstance:
       propertyPath: coinCounter
       value: 
       objectReference: {fileID: 1862528984}
+    - target: {fileID: 6113581356801129113, guid: 8721e8483f3eb424e85d409aac260f05, type: 3}
+      propertyPath: planters.Array.data[0]
+      value: 
+      objectReference: {fileID: 861883506}
+    - target: {fileID: 6113581356801129113, guid: 8721e8483f3eb424e85d409aac260f05, type: 3}
+      propertyPath: planters.Array.data[1]
+      value: 
+      objectReference: {fileID: 1803875593}
+    - target: {fileID: 6113581356801129113, guid: 8721e8483f3eb424e85d409aac260f05, type: 3}
+      propertyPath: planters.Array.data[2]
+      value: 
+      objectReference: {fileID: 717326860}
+    - target: {fileID: 6113581356801129113, guid: 8721e8483f3eb424e85d409aac260f05, type: 3}
+      propertyPath: planters.Array.data[3]
+      value: 
+      objectReference: {fileID: 693091180}
+    - target: {fileID: 6113581356801129113, guid: 8721e8483f3eb424e85d409aac260f05, type: 3}
+      propertyPath: planters.Array.data[4]
+      value: 
+      objectReference: {fileID: 262855706}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8721e8483f3eb424e85d409aac260f05, type: 3}
 --- !u!1 &105005064
@@ -1146,6 +1166,9 @@ MonoBehaviour:
   seed1: {fileID: 5958218757821814018, guid: dfa4dde29c50b1e4dbd15ea64d29d72f, type: 3}
   seed2: {fileID: 6839469430491881097, guid: 587b7c6ee575425489e5e2bb7f6b813c, type: 3}
   seed3: {fileID: 6839469430491881097, guid: 6bec7d9380dcc404a8433f6540bab5ce, type: 3}
+  enemy1: {fileID: 0}
+  enemy2: {fileID: 0}
+  enemy3: {fileID: 0}
 --- !u!61 &262855707
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9797,6 +9820,78 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &596822379
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 596822382}
+  - component: {fileID: 596822381}
+  - component: {fileID: 596822380}
+  m_Layer: 0
+  m_Name: Bed
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &596822380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 596822379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6af88a80a867704bab89db66a4dc530, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gm: {fileID: 1709789506}
+  floatingTextPrefab: {fileID: 4689767091672851696, guid: 4ee3766c9bb318343945e2f8bf4a8535, type: 3}
+--- !u!61 &596822381
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 596822379}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.040597916, y: -0.1072793}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.5969582, y: 2.405507}
+  m_EdgeRadius: 0
+--- !u!4 &596822382
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 596822379}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 46.43, y: -14.02, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &631220042
 GameObject:
   m_ObjectHideFlags: 0
@@ -9903,6 +9998,9 @@ MonoBehaviour:
   seed1: {fileID: 5958218757821814018, guid: dfa4dde29c50b1e4dbd15ea64d29d72f, type: 3}
   seed2: {fileID: 6839469430491881097, guid: 587b7c6ee575425489e5e2bb7f6b813c, type: 3}
   seed3: {fileID: 6839469430491881097, guid: 6bec7d9380dcc404a8433f6540bab5ce, type: 3}
+  enemy1: {fileID: 0}
+  enemy2: {fileID: 0}
+  enemy3: {fileID: 0}
 --- !u!61 &693091181
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10023,6 +10121,9 @@ MonoBehaviour:
   seed1: {fileID: 5958218757821814018, guid: dfa4dde29c50b1e4dbd15ea64d29d72f, type: 3}
   seed2: {fileID: 6839469430491881097, guid: 587b7c6ee575425489e5e2bb7f6b813c, type: 3}
   seed3: {fileID: 6839469430491881097, guid: 6bec7d9380dcc404a8433f6540bab5ce, type: 3}
+  enemy1: {fileID: 0}
+  enemy2: {fileID: 0}
+  enemy3: {fileID: 0}
 --- !u!61 &717326861
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18044,6 +18145,9 @@ MonoBehaviour:
   seed1: {fileID: 5958218757821814018, guid: dfa4dde29c50b1e4dbd15ea64d29d72f, type: 3}
   seed2: {fileID: 6839469430491881097, guid: 587b7c6ee575425489e5e2bb7f6b813c, type: 3}
   seed3: {fileID: 6839469430491881097, guid: 6bec7d9380dcc404a8433f6540bab5ce, type: 3}
+  enemy1: {fileID: 0}
+  enemy2: {fileID: 0}
+  enemy3: {fileID: 0}
 --- !u!61 &861883507
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20490,6 +20594,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1709789506 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6113581356801129113, guid: 8721e8483f3eb424e85d409aac260f05, type: 3}
+  m_PrefabInstance: {fileID: 12148566}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca0a65e06c3324640b08e78f4bbc1ac7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1803875591
 GameObject:
   m_ObjectHideFlags: 0
@@ -20537,6 +20652,9 @@ MonoBehaviour:
   seed1: {fileID: 5958218757821814018, guid: dfa4dde29c50b1e4dbd15ea64d29d72f, type: 3}
   seed2: {fileID: 6839469430491881097, guid: 587b7c6ee575425489e5e2bb7f6b813c, type: 3}
   seed3: {fileID: 6839469430491881097, guid: 6bec7d9380dcc404a8433f6540bab5ce, type: 3}
+  enemy1: {fileID: 0}
+  enemy2: {fileID: 0}
+  enemy3: {fileID: 0}
 --- !u!61 &1803875594
 BoxCollider2D:
   m_ObjectHideFlags: 0
