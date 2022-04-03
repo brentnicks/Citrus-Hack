@@ -11,7 +11,7 @@ public class EnemyCombat : MonoBehaviour
     public Rigidbody2D enemyRigidBody; 
 
     protected bool canAttack = true;
-    protected float attackTimer;
+    protected float attackTimer = 0;
     protected GameObject player;
     protected EnemyMovement movement;
 
