@@ -6,6 +6,7 @@ public class Planter : MonoBehaviour
 {
     bool canPlant = true;
     GameManager gm;
+    public GameObject seed1, seed2, seed3;
 
     private void Start()
     {
@@ -32,6 +33,7 @@ public class Planter : MonoBehaviour
                 if (gm.seed1 > 0)
                 {
                     --gm.seed1;
+                    SpawnPlant(seed1);
                     canPlant = false;
                 }
 
@@ -40,6 +42,7 @@ public class Planter : MonoBehaviour
                 if (gm.seed2 > 0)
                 {
                     --gm.seed2;
+                    SpawnPlant(seed2);
                     canPlant = false;
                 }
                 
@@ -48,6 +51,7 @@ public class Planter : MonoBehaviour
                 if (gm.seed3 > 0)
                 {
                     --gm.seed3;
+                    SpawnPlant(seed3);
                     canPlant = false;
                 }
                 
@@ -58,5 +62,10 @@ public class Planter : MonoBehaviour
         }
         gm.updateCoins();
         gm.updateSeedText();
+    }
+
+    public void SpawnPlant(GameObject seed)
+    {
+        Instantiate(seed, transform.position, Quaternion.identity);
     }
 }
