@@ -5,13 +5,15 @@ using UnityEngine;
 public class WeedSpawner : MonoBehaviour
 {
     public GameObject weed; 
+    GameManager gm;
     // Start is called before the first frame update
     void Start()
     {
-        spawnWeeds();
+        gm = GameObject.Find("GameManager").GetComponent<GameManager>();
+        spawnPlants(); 
     }
 
-    public void spawnWeeds()
+    public void spawnPlants()
     {
         int x = Random.Range(10, 15);
         for ( int i = 0; i < x; i++ )
