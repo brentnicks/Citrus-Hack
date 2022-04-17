@@ -9,20 +9,20 @@ public class Slash : MonoBehaviour
     public GameObject something; 
     public float knockback = 100f; 
     public int damage; 
-    public bool isActive = false;
+    // public bool isActive = false;
     private Rigidbody2D rb; 
     private Rigidbody2D knock;
     // Start is called before the first frame update
     void Start()
     {
-        if (isActive){
+        // if (isActive){
             GameObject player = GameObject.FindGameObjectWithTag("Player");
             if (gameObject.transform.position.x < player.transform.position.x){
                 transform.rotation = Quaternion.Euler(0, 180, 0);
             }
             Destroy(gameObject, slashTime);
             rb = gameObject.GetComponent<Rigidbody2D>();
-        }
+        // }
     }
 
     void OnTriggerEnter2D(Collider2D collision)
