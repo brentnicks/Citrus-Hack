@@ -32,7 +32,7 @@ public class ShopItem : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject == player)
+        if (collision.gameObject.tag == "Player")
         {
             canBuy = true;
             floatingText = Instantiate(floatingTextPrefab, transform.position, Quaternion.identity);
@@ -62,7 +62,7 @@ public class ShopItem : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject == player && floatingText != null)
+        if (collision.gameObject.tag == "Player" && floatingText != null)
         {
             canBuy = false;
             Destroy(floatingText, .25f);
